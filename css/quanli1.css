@@ -1,0 +1,40 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.search{
+    margin-top: 13px;
+    margin-bottom: 13px;
+    
+    
+}
+
+label {
+    float: left;
+    text-align: center;
+    padding-top: 5px;
+    font-size: 18px;
+}
+  
+form {
+    display: block;
+    overflow: hidden;
+    padding: 0px 4px 0px 6px;
+}
+  
+input {
+    width: 100%;
+}
+
+
+.container h2{
+    color: rgb(222, 135, 135);
+    text-align: center;
+}
+.container{
+    
+}
+

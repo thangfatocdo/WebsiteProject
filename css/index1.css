@@ -1,0 +1,133 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS chung */
+.text-center{
+    text-align: center !important;
+}
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: 33.33333%;
+}
+
+.clear{
+    clear: both;
+}
+body {
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+.header-img img{
+    width: 1517.px;
+    height:185.09px ;
+    width: 100%;
+    max-height: 310px;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header  #nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003768;
+}
+  
+#header #nav li {
+    float: left;
+}
+  
+#header  #nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+#header li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#header li .active:hover {
+    color: brown;
+}
+/* CSS CONTAINER */
+#heading-container{
+    background-color: hsl(240, 9%, 9%);
+    height: 536px;
+}
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #250988 0%,
+    #820a74 29%,
+    #517198 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  --text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 150px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* footer */
+#footer{}
+img {
+    width: 220px;
+    height: 78px;
+}
+#footer {
+    background-color: #003768;
+    color: #fff;
+}
+#footer  #nav-footer {
+    list-style-type: none;
+    padding: 0;
+}
+#footer  #nav-footer li a{
+    
+    text-decoration: none;
+    color: white;
+}

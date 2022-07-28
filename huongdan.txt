@@ -1,0 +1,81 @@
++b1
+cau hình csdl --> 
+tao bảng sinh viên -->sql
+
+create table student( 
+    id int primary key auto_increment,
+    fullname varchar(80)not null,
+    age int,
+    address varchar(200),
+)
++chèn --> Nhập 1 vài dự liệu(kbb)
+
+Tạo dự án php
++tao form co bản table 
++DBhelpder - > cau hinh vs lenh thao tac csdl --> common
+
+tạo config.php để kết nối data
++câu hình csdl
+tạo datasv.php 
++tạo funct
+
+<?php
+require_once ('dbhelp.php');
+
+$s_fullname = $s_age = $s_address = '';
+
+if (!empty($_POST)) {
+	$s_id = '';
+
+	if (isset($_POST['fullname'])) {
+		$s_fullname = $_POST['fullname'];
+	}
+
+	if (isset($_POST['age'])) {
+		$s_age = $_POST['age'];
+	}
+
+	if (isset($_POST['address'])) {
+		$s_address = $_POST['address'];
+	}
+
+	if (isset($_POST['id'])) {
+		$s_id = $_POST['id'];
+	}
+
+	$s_fullname = str_replace('\'', '\\\'', $s_fullname);
+	$s_age      = str_replace('\'', '\\\'', $s_age);
+	$s_address  = str_replace('\'', '\\\'', $s_address);
+	$s_id       = str_replace('\'', '\\\'', $s_id);
+
+	if ($s_id != '') {
+		//update
+		$sql = "update student set fullname = '$s_fullname', age = '$s_age', address = '$s_address' where id = " .$s_id;
+	} else {
+		//insert
+		$sql = "insert into student(fullname, age, address) value ('$s_fullname', '$s_age', '$s_address')";
+	}
+
+	// echo $sql;
+
+	execute($sql);
+
+	header('Location: index.php');
+	die();
+}
+
+$id = '';
+if (isset($_GET['id'])) {
+	$id          = $_GET['id'];
+	$sql         = 'select * from student where id = '.$id;
+	$studentList = executeResult($sql);
+	if ($studentList != null && count($studentList) > 0) {
+		$std        = $studentList[0];
+		$s_fullname = $std['fullname'];
+		$s_age      = $std['age'];
+		$s_address  = $std['address'];
+	} else {
+		$id = '';
+	}
+}
+?>
