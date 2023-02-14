@@ -21,12 +21,30 @@ require_once('dbhelp.php')
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Popper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    
+    <link rel="stylesheet" href="./css/index1.css">
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
+<div class="header-img">
+        <img src="./img/Trangbia.jpg" alt="">
+    </div>
+    
+    <div id="header">
+         
+        <ul id="nav">
+            <li><a href="quanli.php">Quản lí sinh viên</a></li>
+            <li><a href="news.php">Giải Trí</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="daotao.php">Đào tạo</a></li>
+            
+
+
+            <li style="float:right"><a class="active" href="#about">About</a></li>
+        </ul>
+        
+        </div>
     <div class="container">
         <div class="panel  panel-primary"> 
             <div class="panel-heading">

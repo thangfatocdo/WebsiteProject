@@ -22,8 +22,12 @@
          
         <ul id="nav">
             <li><a href="quanli.php">Quản lí sinh viên</a></li>
-            <li><a href="#news">Giải Trí</a></li>
+            <li><a href="news.php">Giải Trí</a></li>
             <li><a href="contact.html">Contact</a></li>
+            <li><a href="daotao.php">Đào tạo</a></li>
+            
+
+
             <li style="float:right"><a class="active" href="#about">About</a></li>
         </ul>
         
@@ -75,7 +79,6 @@
                 <p> Cơ sở 2: 233A Phan Văn Trị, P.11, Q. Bình Thạnh, TP. HCM</p>
                 <p>Ký túc xá: 160/63A-B Phan Huy Ích, P. 12, Q. Gò Vấp, TP. HCM</p>
 
-                
             </div>
         </div>
         <div class="clear"></div>

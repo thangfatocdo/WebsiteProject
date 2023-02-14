@@ -1,0 +1,131 @@
+/* reset css */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS chung */
+.text-center{
+    text-align: center !important;
+}
+.row{
+    margin-right: -8px;
+    margin-left: -8px;
+
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.col{
+    float: left;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.col-half{
+    width: 50%;
+}
+.col-third{
+    width: 33.33333%;
+}
+
+.clear{
+    clear: both;
+}
+body {
+    
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
+.header-img img{
+    width: 1517.px;
+    height:185.09px ;
+    width: 100%;
+    max-height: 310px;
+    vertical-align: middle;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#header  #nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #003768;
+}
+  
+#header #nav li {
+    float: left;
+}
+  
+#header  #nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+#header li a:hover:not(.active) {
+    background-color: #111;
+}
+
+#header li .active:hover {
+    color: brown;
+}
+article h3{
+    text-align: center;
+    padding: 15px 0;
+    color: #272f54;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+article .new_list .news_item{
+    width: 23%;
+    padding: 4%;
+    float: left;
+    border: 2px solid #ccc;
+    margin-right: 1%;
+    margin-top: 20px;
+
+}
+article .new_list .news_item h4{
+    font-size: 20px;
+    color: red;
+    margin-bottom: 10px;
+}
+article .new_list .news_item image{
+    margin: 10px auto;
+    width: 300px;    
+}
+
+#fix{
+    margin-right: 0;
+}
+
+/* footer */
+#footer{}
+img {
+    width: 220px;
+    height: 78px;
+}
+#footer {
+    background-color: #003768;
+    color: #fff;
+}
+#footer  #nav-footer {
+    list-style-type: none;
+    padding: 0;
+}
+#footer  #nav-footer li a{
+    
+    text-decoration: none;
+    color: white;
+}
